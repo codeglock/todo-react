@@ -1,0 +1,40 @@
+.todo-input {
+	width: 100%;
+	padding: 15px 10% 15px 15px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+
+::placeholder {
+	color: black;
+	font-weight: 600;
+	font-style: italic;
+	opacity: 0.4;
+}
+.form {
+	display: flex;
+	position: relative;
+}
+
+*:focus {
+	outline: none;
+	border: 1px solid #2f16ec;
+	-moz-outline-radius: 10px;
+	content: '';
+	border-radius: 10px;
+}
+
+.submit-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10%;
+	height: 100%;
+	border: none;
+	border-radius: 0 10px 10px 0;
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 2em;
+	color: #2f16ec;
+	transition: all 0.5s;
+}

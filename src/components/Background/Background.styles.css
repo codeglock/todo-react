@@ -1,0 +1,32 @@
+.bg-wrapper {
+	z-index: -100;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+.bg-header-image {
+	background: linear-gradient(
+			rgb(26, 17, 194, 50%),
+			rgb(114, 99, 141, 50%),
+			rgb(170, 129, 191, 50%),
+			rgb(211, 184, 186, 50%),
+			rgb(249, 241, 178, 50%)
+		),
+		url('https://source.unsplash.com/random')
+			center center no-repeat;
+
+	/*  below values are optional */
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	height: 40vh;
+}
+
+.bottom{
+	height: 60vh;
+	background-color: #0a115c;
+}

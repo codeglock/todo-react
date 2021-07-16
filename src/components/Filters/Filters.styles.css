@@ -1,0 +1,47 @@
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.filter-item {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    color: #2f16ec;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.selected{
+    font-weight: 600;
+    color:#a4f1b3;
+    background-color: #2f16ec;
+}
+
+.floating-action{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: #a4f1b3;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.clear-btn{
+    cursor: pointer;
+    color: black;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+ .filters-footer{
+    height: 5%;
+ }
+} */

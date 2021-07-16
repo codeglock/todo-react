@@ -1,0 +1,24 @@
+.todo-wrapper{
+    background-color: white;
+   overflow: hidden;
+    margin-top: 3em;
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.todo-container{
+    height: 94%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+.todo-container::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 4px;
+    /* background-color: green; */
+}
+
+.todo-container::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #2f16ec;
+}
