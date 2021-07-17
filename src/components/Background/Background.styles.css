@@ -15,8 +15,7 @@
 			rgb(211, 184, 186, 50%),
 			rgb(249, 241, 178, 50%)
 		),
-		url('https://source.unsplash.com/random')
-			center center no-repeat;
+		/* url('https://source.unsplash.com/random') */ center center no-repeat;
 
 	/*  below values are optional */
 	background-attachment: fixed;
@@ -26,7 +25,7 @@
 	height: 40vh;
 }
 
-.bottom{
+.bottom {
 	height: 60vh;
 	background-color: #0a115c;
 }

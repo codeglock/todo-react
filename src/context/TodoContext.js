@@ -1,30 +1,15 @@
-import { createContext } from 'react';
+import React, { createContext, useReducer } from 'react';
+import { TodoReducer } from '../reducers/TodoReducer';
 
-export const TodoContext = createContext({
-	todos: []
-});
+export const TodoContext = createContext();
 
-export default function reducer(state, action) {
-	switch (action.type) {
-		case 'ADD_TODO':
-			// return current state if empty
-			if (!action.payload) {
-				return state;
-			}
-			// return current state if duplicate
-			if (state.todos.includes(action.payload)) {
-				return state;
-			}
-			return {
-				...state,
-				todos: [...state.todos, action.payload]
-			};
-		case 'COMPLETE':
-			return {
-				...state,
-				todos: state.todos.filter((t) => t !== action.payload)
-			};
-		default:
-			return state;
-	}
-}
+const TodoContextProvider = (props) => {
+	const [todos, dispatch] = useReducer(TodoReducer, []);
+	return (
+		<TodoContext.Provider value={{ todos, dispatch }}>
+			{props.children}
+		</TodoContext.Provider>
+	);
+};
+
+export default TodoContextProvider;

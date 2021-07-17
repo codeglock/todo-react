@@ -1,0 +1,65 @@
+.todo-item-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0.3em;
+}
+
+.todo-item {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin: 0.3em;
+	position: relative;
+	background-color: aliceblue;
+}
+
+.todo-item-wrapper:last-child {
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+	.todo-item-wrapper:last-child {
+		margin-bottom: 3em;
+	}
+}
+
+.todo-item-input {
+	padding: 10px 10px 0 10px;
+	background-color: transparent;
+	width: 100%;
+	border: none;
+	margin: 0.2em;
+	margin-right: 0;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #000;
+}
+
+.edit-btn,
+.update-btn,
+.cancel-btn,
+.delete-btn {
+	right: 1em;
+	position: absolute;
+	margin: auto;
+	top: 35%;
+}
+
+.added-date {
+	padding: 0 10px;
+	font-size: 0.8em;
+	margin: 0.2em;
+	opacity: 0.5;
+	color: #2f16ec;
+}
+
+.update-btn,
+.edit-btn {
+	right: 4em !important;
+}
+
+.title-completed {
+	/* add red color line trough text */
+	text-decoration: line-through;
+}

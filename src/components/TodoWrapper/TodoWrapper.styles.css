@@ -1,24 +1,42 @@
-.todo-wrapper{
-    background-color: white;
-   overflow: hidden;
-    margin-top: 3em;
-    border-radius: 10px;
-    height: 100%;
-    position: relative;
+.todo-wrapper {
+	background-color: white;
+	overflow: hidden;
+	margin-top: 3em;
+	border-radius: 10px;
+	height: 100%;
+	position: relative;
 }
 
-.todo-container{
-    height: 94%;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
+.todo-container {
+	height: 94%;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .todo-container::-webkit-scrollbar {
-    border-radius: 10px;
-    width: 4px;
-    /* background-color: green; */
+	border-radius: 10px;
+	width: 4px;
+	/* background-color: green; */
 }
 
 .todo-container::-webkit-scrollbar-thumb {
-    border-radius: 100px;
-    background-color: #2f16ec;
+	border-radius: 100px;
+	background-color: #2f16ec;
+}
+.no-todos {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.no-todos > img {
+	width: 80%;
+}
+
+.no-todos > h2 {
+	color: #2f16ec;
+	letter-spacing: 0.2em;
 }
